@@ -1,0 +1,42 @@
+* {
+  display: flex;
+  flex-direction: column-reverse;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: white;
+  background-color: #417B8E;
+  margin: 3vmin;
+  text-align: justify;
+  padding: 3vmin;
+  line-height: 5em;
+  /* This selector impacts all elements. This was ridcliously helpful becasue I didn't have to create a seprate div or list attributes more than once. */
+}
+
+a:hover{
+  text-decoration: overline;
+  font-size: 5vmin;
+  color: #8C4545;
+  
+
+}
+
+p:hover {
+  color: #1D4048;
+/* Adding hover to both links and paragraphs could have been done in one step, but I wanted diffrent hover colors for each element. The hover element creates interavtivity and life.  */
+}
+
+div + p{
+  border-style: double;
+  border-width: 5vmax;
+  border-top-color: #8C4545;
+  border-bottom-color: #8C4545;
+  border-left: none;
+  border-right: none;
+  /* Selects all p elements that are placed immediately after div elements */
+}
+
+.hey {
+  font-size: 7vmin;
+  text-shadow: 2px 2px #FF0000;
+
+}
